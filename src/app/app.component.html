@@ -1,0 +1,24 @@
+<div>
+  <h1>Informacion del modelo</h1>
+</div>
+<hr>
+
+<div>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" class="sidemenu" opened>
+
+      <app-property-menu #propMenu></app-property-menu>
+      <app-spatial-tree #spatialTree></app-spatial-tree>
+
+    </mat-sidenav>
+      
+    <mat-sidenav-content>
+      
+      <app-toolbar (onOpenNavbar)="sidenav.toggle()"></app-toolbar>
+      <div #threeContainer id="viewer-container"></div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  
+</div>
